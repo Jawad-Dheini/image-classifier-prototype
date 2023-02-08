@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cats and Dogs Image Classifier</title>
+  </head>
+  <body>
+    <h1 id="title">Cats and Dogs Image Classifier</h1>
+
+    <div class="container">
+      <label for="input">
+        <input
+          type="file"
+          accept="image/*"
+          name="image"
+          id="input"
+          onchange="loadFile(event)"
+        />
+      </label>
+      <img id="output" />
+
+      <button id="classify-button">Classify</button>
+    </div>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
